@@ -1,0 +1,378 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6e706fb6-9e3f-4e88-bac1-261345460dd1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Mk.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Mk</Name>
+    <RootNamespace>Mk</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Mk.py" />
+    <Compile Include="ganModel1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ops\imageProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ops\readData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ops\textProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ops\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GLOVEModel.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\flower\test\" />
+    <Folder Include="data\flower\snapshots\" />
+    <Folder Include="data\glove\" />
+    <Folder Include="data\flower\img\" />
+    <Folder Include="data\flower\" />
+    <Folder Include="data\flower\txt\" />
+    <Folder Include="data\models\" />
+    <Folder Include="data\models\flower\" />
+    <Folder Include="ops\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\.ignore" />
+    <Content Include="data\flower\img\image_00001.jpg" />
+    <Content Include="data\flower\img\image_00002.jpg" />
+    <Content Include="data\flower\img\image_00003.jpg" />
+    <Content Include="data\flower\img\image_00004.jpg" />
+    <Content Include="data\flower\img\image_00005.jpg" />
+    <Content Include="data\flower\img\image_00006.jpg" />
+    <Content Include="data\flower\img\image_00007.jpg" />
+    <Content Include="data\flower\img\image_00008.jpg" />
+    <Content Include="data\flower\img\image_00009.jpg" />
+    <Content Include="data\flower\img\image_00010.jpg" />
+    <Content Include="data\flower\img\image_00011.jpg" />
+    <Content Include="data\flower\img\image_00012.jpg" />
+    <Content Include="data\flower\img\image_00013.jpg" />
+    <Content Include="data\flower\img\image_00014.jpg" />
+    <Content Include="data\flower\img\image_00015.jpg" />
+    <Content Include="data\flower\img\image_00016.jpg" />
+    <Content Include="data\flower\img\image_00017.jpg" />
+    <Content Include="data\flower\img\image_00018.jpg" />
+    <Content Include="data\flower\img\image_00019.jpg" />
+    <Content Include="data\flower\img\image_00020.jpg" />
+    <Content Include="data\flower\img\image_00021.jpg" />
+    <Content Include="data\flower\img\image_00022.jpg" />
+    <Content Include="data\flower\img\image_00023.jpg" />
+    <Content Include="data\flower\img\image_00024.jpg" />
+    <Content Include="data\flower\img\image_00025.jpg" />
+    <Content Include="data\flower\img\image_00026.jpg" />
+    <Content Include="data\flower\img\image_00027.jpg" />
+    <Content Include="data\flower\img\image_00028.jpg" />
+    <Content Include="data\flower\img\image_00029.jpg" />
+    <Content Include="data\flower\img\image_00030.jpg" />
+    <Content Include="data\flower\img\image_00031.jpg" />
+    <Content Include="data\flower\img\image_00032.jpg" />
+    <Content Include="data\flower\img\image_00033.jpg" />
+    <Content Include="data\flower\img\image_00034.jpg" />
+    <Content Include="data\flower\img\image_00035.jpg" />
+    <Content Include="data\flower\img\image_00036.jpg" />
+    <Content Include="data\flower\img\image_00037.jpg" />
+    <Content Include="data\flower\img\image_00038.jpg" />
+    <Content Include="data\flower\img\image_00039.jpg" />
+    <Content Include="data\flower\img\image_00040.jpg" />
+    <Content Include="data\flower\img\image_00041.jpg" />
+    <Content Include="data\flower\img\image_00042.jpg" />
+    <Content Include="data\flower\img\image_00043.jpg" />
+    <Content Include="data\flower\img\image_00044.jpg" />
+    <Content Include="data\flower\img\image_00045.jpg" />
+    <Content Include="data\flower\img\image_00046.jpg" />
+    <Content Include="data\flower\img\image_00047.jpg" />
+    <Content Include="data\flower\img\image_00048.jpg" />
+    <Content Include="data\flower\img\image_00049.jpg" />
+    <Content Include="data\flower\img\image_00050.jpg" />
+    <Content Include="data\flower\img\image_00051.jpg" />
+    <Content Include="data\flower\img\image_00052.jpg" />
+    <Content Include="data\flower\img\image_00053.jpg" />
+    <Content Include="data\flower\img\image_00054.jpg" />
+    <Content Include="data\flower\img\image_00055.jpg" />
+    <Content Include="data\flower\img\image_00056.jpg" />
+    <Content Include="data\flower\img\image_00057.jpg" />
+    <Content Include="data\flower\img\image_00058.jpg" />
+    <Content Include="data\flower\img\image_00059.jpg" />
+    <Content Include="data\flower\img\image_00060.jpg" />
+    <Content Include="data\flower\img\image_00061.jpg" />
+    <Content Include="data\flower\img\image_00062.jpg" />
+    <Content Include="data\flower\img\image_00063.jpg" />
+    <Content Include="data\flower\img\image_00064.jpg" />
+    <Content Include="data\flower\img\image_00065.jpg" />
+    <Content Include="data\flower\img\image_00066.jpg" />
+    <Content Include="data\flower\img\image_00067.jpg" />
+    <Content Include="data\flower\img\image_00068.jpg" />
+    <Content Include="data\flower\img\image_00069.jpg" />
+    <Content Include="data\flower\img\image_00070.jpg" />
+    <Content Include="data\flower\img\image_00071.jpg" />
+    <Content Include="data\flower\img\image_00072.jpg" />
+    <Content Include="data\flower\img\image_00073.jpg" />
+    <Content Include="data\flower\img\image_00074.jpg" />
+    <Content Include="data\flower\img\image_00075.jpg" />
+    <Content Include="data\flower\img\image_00076.jpg" />
+    <Content Include="data\flower\img\image_00077.jpg" />
+    <Content Include="data\flower\img\image_00078.jpg" />
+    <Content Include="data\flower\img\image_00079.jpg" />
+    <Content Include="data\flower\img\image_00080.jpg" />
+    <Content Include="data\flower\img\image_00081.jpg" />
+    <Content Include="data\flower\img\image_00082.jpg" />
+    <Content Include="data\flower\img\image_00083.jpg" />
+    <Content Include="data\flower\img\image_00084.jpg" />
+    <Content Include="data\flower\img\image_00085.jpg" />
+    <Content Include="data\flower\img\image_00086.jpg" />
+    <Content Include="data\flower\img\image_00087.jpg" />
+    <Content Include="data\flower\img\image_00088.jpg" />
+    <Content Include="data\flower\img\image_00089.jpg" />
+    <Content Include="data\flower\img\image_00090.jpg" />
+    <Content Include="data\flower\img\image_00091.jpg" />
+    <Content Include="data\flower\img\image_00092.jpg" />
+    <Content Include="data\flower\img\image_00093.jpg" />
+    <Content Include="data\flower\img\image_00094.jpg" />
+    <Content Include="data\flower\img\image_00095.jpg" />
+    <Content Include="data\flower\img\image_00096.jpg" />
+    <Content Include="data\flower\img\image_00097.jpg" />
+    <Content Include="data\flower\img\image_00098.jpg" />
+    <Content Include="data\flower\img\image_00099.jpg" />
+    <Content Include="data\flower\img\image_00100.jpg" />
+    <Content Include="data\flower\img\image_00101.jpg" />
+    <Content Include="data\flower\img\image_00102.jpg" />
+    <Content Include="data\flower\img\image_00103.jpg" />
+    <Content Include="data\flower\img\image_00104.jpg" />
+    <Content Include="data\flower\img\image_00105.jpg" />
+    <Content Include="data\flower\img\image_00106.jpg" />
+    <Content Include="data\flower\img\image_00107.jpg" />
+    <Content Include="data\flower\img\image_00108.jpg" />
+    <Content Include="data\flower\img\image_00109.jpg" />
+    <Content Include="data\flower\img\image_00110.jpg" />
+    <Content Include="data\flower\img\image_00111.jpg" />
+    <Content Include="data\flower\img\image_00112.jpg" />
+    <Content Include="data\flower\img\image_00113.jpg" />
+    <Content Include="data\flower\img\image_00114.jpg" />
+    <Content Include="data\flower\img\image_00115.jpg" />
+    <Content Include="data\flower\img\image_00116.jpg" />
+    <Content Include="data\flower\img\image_00117.jpg" />
+    <Content Include="data\flower\img\image_00118.jpg" />
+    <Content Include="data\flower\img\image_00119.jpg" />
+    <Content Include="data\flower\img\image_00120.jpg" />
+    <Content Include="data\flower\img\image_00121.jpg" />
+    <Content Include="data\flower\img\image_00122.jpg" />
+    <Content Include="data\flower\img\image_00123.jpg" />
+    <Content Include="data\flower\img\image_00124.jpg" />
+    <Content Include="data\flower\img\image_00125.jpg" />
+    <Content Include="data\flower\img\image_00126.jpg" />
+    <Content Include="data\flower\img\image_00127.jpg" />
+    <Content Include="data\flower\img\image_00128.jpg" />
+    <Content Include="data\flower\img\image_00129.jpg" />
+    <Content Include="data\flower\img\image_00130.jpg" />
+    <Content Include="data\flower\img\image_00131.jpg" />
+    <Content Include="data\flower\img\image_00132.jpg" />
+    <Content Include="data\flower\img\image_00133.jpg" />
+    <Content Include="data\flower\img\image_00134.jpg" />
+    <Content Include="data\flower\img\image_00135.jpg" />
+    <Content Include="data\flower\img\image_00136.jpg" />
+    <Content Include="data\flower\img\image_00137.jpg" />
+    <Content Include="data\flower\img\image_00138.jpg" />
+    <Content Include="data\flower\img\image_00139.jpg" />
+    <Content Include="data\flower\img\image_00140.jpg" />
+    <Content Include="data\flower\img\image_00141.jpg" />
+    <Content Include="data\flower\img\image_00142.jpg" />
+    <Content Include="data\flower\img\image_00143.jpg" />
+    <Content Include="data\flower\img\image_00144.jpg" />
+    <Content Include="data\flower\img\image_00145.jpg" />
+    <Content Include="data\flower\img\image_00146.jpg" />
+    <Content Include="data\flower\img\image_00147.jpg" />
+    <Content Include="data\flower\img\image_00148.jpg" />
+    <Content Include="data\flower\img\image_00149.jpg" />
+    <Content Include="data\flower\img\image_00150.jpg" />
+    <Content Include="data\flower\txt\image_00001.txt" />
+    <Content Include="data\flower\txt\image_00002.txt" />
+    <Content Include="data\flower\txt\image_00003.txt" />
+    <Content Include="data\flower\txt\image_00004.txt" />
+    <Content Include="data\flower\txt\image_00005.txt" />
+    <Content Include="data\flower\txt\image_00006.txt" />
+    <Content Include="data\flower\txt\image_00007.txt" />
+    <Content Include="data\flower\txt\image_00008.txt" />
+    <Content Include="data\flower\txt\image_00009.txt" />
+    <Content Include="data\flower\txt\image_00010.txt" />
+    <Content Include="data\flower\txt\image_00011.txt" />
+    <Content Include="data\flower\txt\image_00012.txt" />
+    <Content Include="data\flower\txt\image_00013.txt" />
+    <Content Include="data\flower\txt\image_00014.txt" />
+    <Content Include="data\flower\txt\image_00015.txt" />
+    <Content Include="data\flower\txt\image_00016.txt" />
+    <Content Include="data\flower\txt\image_00017.txt" />
+    <Content Include="data\flower\txt\image_00018.txt" />
+    <Content Include="data\flower\txt\image_00019.txt" />
+    <Content Include="data\flower\txt\image_00020.txt" />
+    <Content Include="data\flower\txt\image_00021.txt" />
+    <Content Include="data\flower\txt\image_00022.txt" />
+    <Content Include="data\flower\txt\image_00023.txt" />
+    <Content Include="data\flower\txt\image_00024.txt" />
+    <Content Include="data\flower\txt\image_00025.txt" />
+    <Content Include="data\flower\txt\image_00026.txt" />
+    <Content Include="data\flower\txt\image_00027.txt" />
+    <Content Include="data\flower\txt\image_00028.txt" />
+    <Content Include="data\flower\txt\image_00029.txt" />
+    <Content Include="data\flower\txt\image_00030.txt" />
+    <Content Include="data\flower\txt\image_00031.txt" />
+    <Content Include="data\flower\txt\image_00032.txt" />
+    <Content Include="data\flower\txt\image_00033.txt" />
+    <Content Include="data\flower\txt\image_00034.txt" />
+    <Content Include="data\flower\txt\image_00035.txt" />
+    <Content Include="data\flower\txt\image_00036.txt" />
+    <Content Include="data\flower\txt\image_00037.txt" />
+    <Content Include="data\flower\txt\image_00038.txt" />
+    <Content Include="data\flower\txt\image_00039.txt" />
+    <Content Include="data\flower\txt\image_00040.txt" />
+    <Content Include="data\flower\txt\image_00041.txt" />
+    <Content Include="data\flower\txt\image_00042.txt" />
+    <Content Include="data\flower\txt\image_00043.txt" />
+    <Content Include="data\flower\txt\image_00044.txt" />
+    <Content Include="data\flower\txt\image_00045.txt" />
+    <Content Include="data\flower\txt\image_00046.txt" />
+    <Content Include="data\flower\txt\image_00047.txt" />
+    <Content Include="data\flower\txt\image_00048.txt" />
+    <Content Include="data\flower\txt\image_00049.txt" />
+    <Content Include="data\flower\txt\image_00050.txt" />
+    <Content Include="data\flower\txt\image_00051.txt" />
+    <Content Include="data\flower\txt\image_00052.txt" />
+    <Content Include="data\flower\txt\image_00053.txt" />
+    <Content Include="data\flower\txt\image_00054.txt" />
+    <Content Include="data\flower\txt\image_00055.txt" />
+    <Content Include="data\flower\txt\image_00056.txt" />
+    <Content Include="data\flower\txt\image_00057.txt" />
+    <Content Include="data\flower\txt\image_00058.txt" />
+    <Content Include="data\flower\txt\image_00059.txt" />
+    <Content Include="data\flower\txt\image_00060.txt" />
+    <Content Include="data\flower\txt\image_00061.txt" />
+    <Content Include="data\flower\txt\image_00062.txt" />
+    <Content Include="data\flower\txt\image_00063.txt" />
+    <Content Include="data\flower\txt\image_00064.txt" />
+    <Content Include="data\flower\txt\image_00065.txt" />
+    <Content Include="data\flower\txt\image_00066.txt" />
+    <Content Include="data\flower\txt\image_00067.txt" />
+    <Content Include="data\flower\txt\image_00068.txt" />
+    <Content Include="data\flower\txt\image_00069.txt" />
+    <Content Include="data\flower\txt\image_00070.txt" />
+    <Content Include="data\flower\txt\image_00071.txt" />
+    <Content Include="data\flower\txt\image_00072.txt" />
+    <Content Include="data\flower\txt\image_00073.txt" />
+    <Content Include="data\flower\txt\image_00074.txt" />
+    <Content Include="data\flower\txt\image_00075.txt" />
+    <Content Include="data\flower\txt\image_00076.txt" />
+    <Content Include="data\flower\txt\image_00077.txt" />
+    <Content Include="data\flower\txt\image_00078.txt" />
+    <Content Include="data\flower\txt\image_00079.txt" />
+    <Content Include="data\flower\txt\image_00080.txt" />
+    <Content Include="data\flower\txt\image_00081.txt" />
+    <Content Include="data\flower\txt\image_00082.txt" />
+    <Content Include="data\flower\txt\image_00083.txt" />
+    <Content Include="data\flower\txt\image_00084.txt" />
+    <Content Include="data\flower\txt\image_00085.txt" />
+    <Content Include="data\flower\txt\image_00086.txt" />
+    <Content Include="data\flower\txt\image_00087.txt" />
+    <Content Include="data\flower\txt\image_00088.txt" />
+    <Content Include="data\flower\txt\image_00089.txt" />
+    <Content Include="data\flower\txt\image_00090.txt" />
+    <Content Include="data\flower\txt\image_00091.txt" />
+    <Content Include="data\flower\txt\image_00092.txt" />
+    <Content Include="data\flower\txt\image_00093.txt" />
+    <Content Include="data\flower\txt\image_00094.txt" />
+    <Content Include="data\flower\txt\image_00095.txt" />
+    <Content Include="data\flower\txt\image_00096.txt" />
+    <Content Include="data\flower\txt\image_00097.txt" />
+    <Content Include="data\flower\txt\image_00098.txt" />
+    <Content Include="data\flower\txt\image_00099.txt" />
+    <Content Include="data\flower\txt\image_00100.txt" />
+    <Content Include="data\flower\txt\image_00101.txt" />
+    <Content Include="data\flower\txt\image_00102.txt" />
+    <Content Include="data\flower\txt\image_00103.txt" />
+    <Content Include="data\flower\txt\image_00104.txt" />
+    <Content Include="data\flower\txt\image_00105.txt" />
+    <Content Include="data\flower\txt\image_00106.txt" />
+    <Content Include="data\flower\txt\image_00107.txt" />
+    <Content Include="data\flower\txt\image_00108.txt" />
+    <Content Include="data\flower\txt\image_00109.txt" />
+    <Content Include="data\flower\txt\image_00110.txt" />
+    <Content Include="data\flower\txt\image_00111.txt" />
+    <Content Include="data\flower\txt\image_00112.txt" />
+    <Content Include="data\flower\txt\image_00113.txt" />
+    <Content Include="data\flower\txt\image_00114.txt" />
+    <Content Include="data\flower\txt\image_00115.txt" />
+    <Content Include="data\flower\txt\image_00116.txt" />
+    <Content Include="data\flower\txt\image_00117.txt" />
+    <Content Include="data\flower\txt\image_00118.txt" />
+    <Content Include="data\flower\txt\image_00119.txt" />
+    <Content Include="data\flower\txt\image_00120.txt" />
+    <Content Include="data\flower\txt\image_00121.txt" />
+    <Content Include="data\flower\txt\image_00122.txt" />
+    <Content Include="data\flower\txt\image_00123.txt" />
+    <Content Include="data\flower\txt\image_00124.txt" />
+    <Content Include="data\flower\txt\image_00125.txt" />
+    <Content Include="data\flower\txt\image_00126.txt" />
+    <Content Include="data\flower\txt\image_00127.txt" />
+    <Content Include="data\flower\txt\image_00128.txt" />
+    <Content Include="data\flower\txt\image_00129.txt" />
+    <Content Include="data\flower\txt\image_00130.txt" />
+    <Content Include="data\flower\txt\image_00131.txt" />
+    <Content Include="data\flower\txt\image_00132.txt" />
+    <Content Include="data\flower\txt\image_00133.txt" />
+    <Content Include="data\flower\txt\image_00134.txt" />
+    <Content Include="data\flower\txt\image_00135.txt" />
+    <Content Include="data\flower\txt\image_00136.txt" />
+    <Content Include="data\flower\txt\image_00137.txt" />
+    <Content Include="data\flower\txt\image_00138.txt" />
+    <Content Include="data\flower\txt\image_00139.txt" />
+    <Content Include="data\flower\txt\image_00140.txt" />
+    <Content Include="data\flower\txt\image_00141.txt" />
+    <Content Include="data\flower\txt\image_00142.txt" />
+    <Content Include="data\flower\txt\image_00143.txt" />
+    <Content Include="data\flower\txt\image_00144.txt" />
+    <Content Include="data\flower\txt\image_00145.txt" />
+    <Content Include="data\flower\txt\image_00146.txt" />
+    <Content Include="data\flower\txt\image_00147.txt" />
+    <Content Include="data\flower\txt\image_00148.txt" />
+    <Content Include="data\flower\txt\image_00149.txt" />
+    <Content Include="data\flower\txt\image_00150.txt" />
+    <Content Include="data\glove\glove.6B.100d.txt" />
+    <Content Include="data\glove\glove.6B.200d.txt" />
+    <Content Include="data\glove\glove.6B.300d.txt" />
+    <Content Include="data\glove\glove.6B.50d.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
